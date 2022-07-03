@@ -1,0 +1,67 @@
+.team-box {
+    text-align: center;
+    background: #f5f4fa;
+}
+
+.team {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+
+    &-pic {
+        padding-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--brand-second-color);
+        margin: 0;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+
+    &-jobs {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-main-color);
+        }
+    }
+
+    &-social {
+        margin-top: 16px;
+        margin-bottom: 30px;
+        width: 206px;
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    &-icon {
+        fill: #afb1b8;
+        margin-top: 16px;
+        margin-bottom: 18px;
+    
+
+        &:active,
+        &:hover,
+        &:focus {
+            fill: var(--brand-second-color);
+            --color3: var(--brand-main-color);
+            cursor: pointer;
+        }
+    }
+}

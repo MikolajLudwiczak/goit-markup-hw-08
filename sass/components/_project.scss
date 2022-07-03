@@ -1,0 +1,39 @@
+.project-box {
+    text-align: center;
+    padding-top: 0;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+
+
+    &-item {
+        list-style: none;
+        position: relative;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    &-description {
+        width: 370px;
+        height: 70px;
+        background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.8) 0%,
+                rgba(47, 48, 58, 0.8) 100%);
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}

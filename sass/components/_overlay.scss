@@ -1,0 +1,26 @@
+.overlay {
+    z-index: 4;
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: var(--transition);
+    transition-property: transform;
+
+    &__label {
+        text-align: left;
+        padding-top: 49px;
+        padding-left: 24px;
+        padding-right: 45px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+
+    &-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-right: 46px;
+        text-decoration: none;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:visited{
+            color: var(--text-main-color);
+        }
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: var(--brand-main-color);
+        }
+
+
+        &-activepage::after {
+            content: "";
+            display: block;
+            position: relative;
+            border-top: 4px solid var(--brand-main-color);
+            border-radius: 2px;
+            margin-bottom: -4px;
+            top: 27px;
+            left: 0;
+        }
+    }
+}
