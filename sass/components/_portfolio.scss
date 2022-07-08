@@ -110,7 +110,6 @@
             transition: var(--transition);
             transition-property: fill;
             border: 1px solid #EEEEEE;
-
     
             &:hover,
             &:active,
@@ -185,7 +184,7 @@
         &-item {
             position: relative;
             z-index: 1;
-            width: 450px;
+            width: 370px;
             height: 404px;
             margin: 15px;
             list-style-type: none;
