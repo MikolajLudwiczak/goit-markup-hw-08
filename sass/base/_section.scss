@@ -1,22 +1,47 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
 
+        &__title { 
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.03em;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
 
-    &__title { 
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        letter-spacing: 0.03em;
-        margin-bottom: 50px;
-        font-weight: 700;
+        &__preferences {
+            padding-top: 0;
+        }
+        
+        &__team {
+            background-color: #f5f4fa;
+        }
     }
+}
 
-    &__preferences {
-        padding-top: 0;
-    }
-    
-    &__team {
-        background-color: #f5f4fa;
+@media screen and (min-width: 480px) and (max-width: 1199px){
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 0.03em;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        &__preferences {
+            padding-top: 0;
+        }
+
+        &__team {
+            background-color: #f5f4fa;
+        }
     }
 }

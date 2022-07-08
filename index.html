@@ -28,7 +28,15 @@
         </a>
       </h2>
 
-      <nav>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16" viewBox="0 0 24 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+        </svg>
+
+      </button>
+
+      <nav class="navi">
         <!-- Navigation menu -->
         <menu class="nav">
           <li class="nav-item">
@@ -77,46 +85,37 @@
       <div class="container">
         <!-- LOREM IPSUM -->
         <ul class="asset">
-          <li class="asset-item-icon">
-            <svg class="icon" width="70" height="70">
+          <li class="asset-item">
+            <svg class="asset-item-icon" width="70" height="70">
               <use href="./images/icons.svg#icon-antena"></use>
             </svg>
+            <h3 class="asset-item-title">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            eos quis incidunt temporibus voluptates voluptatibus, inventore
+            vel libero consectetur dolore.
           </li>
-          <li class="asset-item-icon">
-            <svg class="icon" width="70" height="70">
+          <li class="asset-item">
+            <svg class="asset-item-icon" width="70" height="70">
               <use href="./images/icons.svg#icon-clock"></use>
             </svg>
+            <h3 class="asset-item-title">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            eos quis incidunt temporibus voluptates voluptatibus, inventore
+            vel libero consectetur dolore.
           </li>
-          <li class="asset-item-icon">
-            <svg class="icon" width="70" height="70">
+          <li class="asset-item">
+            <svg class="asset-item-icon" width="70" height="70">
               <use href="./images/icons.svg#icon-diagram"></use>
             </svg>
+            <h3 class="asset-item-title">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            eos quis incidunt temporibus voluptates voluptatibus, inventore
+            vel libero consectetur dolore.
           </li>
-          <li class="asset-item-icon">
-            <svg class="icon" width="70" height="70">
+          <li class="asset-item">
+            <svg class="asset-item-icon" width="70" height="70">
               <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
-          </li>
-
-          <li class="asset-item">
-            <h3 class="asset-item-title">LOREM IPSUM</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            eos quis incidunt temporibus voluptates voluptatibus, inventore
-            vel libero consectetur dolore.
-          </li>
-          <li class="asset-item">
-            <h3 class="asset-item-title">LOREM IPSUM</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            eos quis incidunt temporibus voluptates voluptatibus, inventore
-            vel libero consectetur dolore.
-          </li>
-          <li class="asset-item">
-            <h3 class="asset-item-title">LOREM IPSUM</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            eos quis incidunt temporibus voluptates voluptatibus, inventore
-            vel libero consectetur dolore.
-          </li>
-          <li class="asset-item">
             <h3 class="asset-item-title">LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             eos quis incidunt temporibus voluptates voluptatibus, inventore
@@ -154,7 +153,12 @@
         <ul class="team">
           <li class="team-item">
             <figure class="team-pic">
-              <img src="./images/proddes.jpg" alt="Joe Doe profil picture" width="270" height="260" />
+              <img src="./images/mobile/proddes-mobile.jpg" srcset="./images/mobile/proddes-mobile.jpg 450w,
+                      ./images/mobile/proddes-mobile@2x.jpg 900w,
+                      ./images/tablet/proddes-tab.jpg 354w,
+                      ./images/tablet/proddes-tab@2x.jpg 708w,
+                      ./images/proddes.jpg 270w" alt="Joe Doe profil picture"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="team-description">
                 <p class="team-description-jobs" p>Joe Doe</p>
                 Product Designer
@@ -185,7 +189,12 @@
           </li>
           <li class="team-item">
             <figure class="team-pic">
-              <img src="./images/frontdev.jpg" alt="Joe Doe profil picture" width="270" height="260" />
+              <img src="./images/mobile/frontdev-mobile.jpg" srcset="./images/mobile/frontdev-mobile.jpg 450w,
+                                    ./images/mobile/frontdev-mobile@2x.jpg 900w,
+                                    ./images/tablet/frontdev-tab.jpg 354w,
+                                    ./images/tablet/frontdev-tab@2x.jpg 708w,
+                                    ./images/frontdev.jpg 270w" alt="Joe Doe profil picture"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="team-description">
                 <p class="team-description-jobs">Joe Doe</p>
                 Frontend Developer
@@ -216,7 +225,12 @@
           </li>
           <li class="team-item">
             <figure class="team-pic">
-              <img src="./images/marketing.jpg" alt="Joe Doe profil picture" width="270" height="260" />
+              <img src="./images/mobile/marketing-mobile.jpg" srcset="./images/mobile/marketing-mobile.jpg 450w,
+                                    ./images/mobile/marketing-mobile@2x.jpg 900w,
+                                    ./images/tablet/marketing-tab.jpg 354w,
+                                    ./images/tablet/marketing-tab@2x.jpg 708w,
+                                    ./images/marketing.jpg 270w" alt="Joe Doe profil picture"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="team-description">
                 <p class="team-description-jobs">Joe Doe</p>
                 Marketing
@@ -247,7 +261,12 @@
           </li>
           <li class="team-item">
             <figure class="team-pic">
-              <img src="./images/uides.jpg" alt="Joe Doe profil picture" width="270" height="260" />
+              <img src="./images/mobile/uides-mobile.jpg" srcset="./images/mobile/uides-mobile.jpg 450w,
+                                    ./images/mobile/uides-mobile@2x.jpg 900w,
+                                    ./images/tablet/uides-tab.jpg 354w,
+                                    ./images/tablet/uides-tab@2x.jpg 708w,
+                                    ./images/uides.jpg 270w" alt="Joe Doe profil picture"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="team-description">
                 <p class="team-description-jobs">Joe Doe</p>
                 UI Designer
@@ -428,7 +447,45 @@
       </form>
     </div>
   </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active-page"
+          href="./index.html">Agencja</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Portfolio</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contact">Kontakt</a></li>
+    </ul>
+    <ul class="mobile-contact">
+      <li class="mobile-contact__tel"><a href="tel:+4811111111" class="mobile-contact__link-tel">
+          +48 111 111 111</a></li>
+      <li class="mobile-contact__mail"><a href="mailto:info@devstudio.com" class="mobile-contact__link-mail">
+          info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-social">
+      <li class="mobile-social__item"><a href="#instagram" class="mobile-social__link">Instagram <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#twitter" class="mobile-social__link">Twitter <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#facebook" class="mobile-social__link">Facebook <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#linkedin" class="mobile-social__link">Linkedin</a></li>
+    </ul>
+  </div>
+
   <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

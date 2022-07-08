@@ -28,14 +28,22 @@
         </a>
       </h2>
 
-      <nav>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="24" height="16" viewBox="0 0 24 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+        </svg>
+
+      </button>
+
+      <nav class="navi">
         <!-- Navigation menu -->
         <menu class="nav">
           <li class="nav-item">
             <a class="nav__link" href="index.html">Agencja</a>
           </li>
           <li class="nav-item">
-            <a class="nav__link nav__link-activepage" href="portfolio.html">Portfolio</a>
+            <a class="nav__link  nav__link-activepage" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav__link" href="#contact">Kontakt</a>
@@ -96,7 +104,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/laptop1.jpg" alt="Laptop wit 3 persons" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/laptop1-mobile.jpg" srcset="./images/mobile/laptop1-mobile.jpg 450w,
+                      ./images/mobile/laptop1-mobile@2x.jpg 900w,
+                      ./images/tablet/laptop1-tab.jpg 354w,
+                      ./images/tablet/laptop1-tab@2x.jpg 708w,
+                      ./images/laptop1.jpg 370w" alt="Laptop wit 3 persons"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Technocrack</h3>
                 <p class="portfolio-type">Strona internetowa</p>
@@ -113,7 +126,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/basketball.jpg" alt="Basketball match" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/basketball-mobile.jpg" srcset="./images/mobile/basketball-mobile.jpg 450w,
+                                    ./images/mobile/basketball-mobile@2x.jpg 900w,
+                                    ./images/tablet/basketball-tab.jpg 354w,
+                                    ./images/tablet/basketball-tab@2x.jpg 708w,
+                                    ./images/Basketball.jpg 370w" alt="Basketball match"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">
                   Grafika New Orlean vs Golden Star
@@ -132,7 +150,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/fish.jpg" alt="Seafood restaurant logo" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/fish-mobile.jpg" srcset="./images/mobile/fish-mobile.jpg 450w,
+                                                  ./images/mobile/fish-mobile@2x.jpg 900w,
+                                                  ./images/tablet/fish-tab.jpg 354w,
+                                                  ./images/tablet/fish-tab@2x.jpg 708w,
+                                                  ./images/fish.jpg 370w" alt="Seafood restaurant logo"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Restauracja Seafood</h3>
                 <p class="portfolio-type">Aplikacja</p>
@@ -149,7 +172,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/headphones.jpg" alt="Headphones picture" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/headphones-mobile.jpg" srcset="./images/mobile/headphones-mobile.jpg 450w,
+                                                  ./images/mobile/headphones-mobile@2x.jpg 900w,
+                                                  ./images/tablet/headphones-tab.jpg 354w,
+                                                  ./images/tablet/headphones-tab@2x.jpg 708w,
+                                                  ./images/headphones.jpg 370w" alt="Headphones picture"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Projekt Prime</h3>
                 <p class="portfolio-type">Marketing</p>
@@ -166,7 +194,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/boxes.jpg" alt="Boxes picture" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/boxes-mobile.jpg" srcset="./images/mobile/boxes-mobile.jpg 450w,
+                                                  ./images/mobile/boxes-mobile@2x.jpg 900w,
+                                                  ./images/tablet/boxes-tab.jpg 354w,
+                                                  ./images/tablet/boxes-tab@2x.jpg 708w,
+                                                  ./images/boxes.jpg 370w" alt="Boxes picture"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Projekt Boxes</h3>
                 <p class="portfolio-type">Aplikacja</p>
@@ -183,7 +216,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/monitor.jpg" alt="Monitor picture" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/monitor-mobile.jpg" srcset="./images/mobile/monitor-mobile.jpg 450w,
+                                                  ./images/mobile/monitor-mobile@2x.jpg 900w,
+                                                  ./images/tablet/monitor-tab.jpg 354w,
+                                                  ./images/tablet/monitor-tab@2x.jpg 708w,
+                                                  ./images/monitor.jpg 370w" alt="Monitor picture"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Inspiration has no borders</h3>
                 <p class="portfolio-type">Strona internetowa</p>
@@ -200,7 +238,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/magazine.jpg" alt="Magazine picture" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/magazine-mobile.jpg" srcset="./images/mobile/magazine-mobile.jpg 450w,
+                                                  ./images/mobile/magazine-mobile@2x.jpg 900w,
+                                                  ./images/tablet/magazine-tab.jpg 354w,
+                                                  ./images/tablet/magazine-tab@2x.jpg 708w,
+                                                  ./images/magazine.jpg 370w" alt="Magazine picture"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Magazyn Limited Edition</h3>
                 <p class="portfolio-type">Dizajn</p>
@@ -217,7 +260,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/label.jpg" alt="Label picture" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/label-mobile.jpg" srcset="./images/mobile/label-mobile.jpg 450w,
+                                                  ./images/mobile/label-mobile@2x.jpg 900w,
+                                                  ./images/tablet/label-tab.jpg 354w,
+                                                  ./images/tablet/label-tab@2x.jpg 708w,
+                                                  ./images/label.jpg 370w" alt="Label picture"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Projekt LAB</h3>
                 <p class="portfolio-type">Marketing</p>
@@ -234,7 +282,12 @@
               </p>
             </div>
             <figure class="portfolio-image">
-              <img class="img-over" src="./images/laptop2.jpg" alt="Working on laptop" width="370" height="294" />
+              <img class="img-over" src="./images/mobile/laptop2-mobile.jpg" srcset="./images/mobile/laptop2-mobile.jpg 450w,
+                                                  ./images/mobile/laptop2-mobile@2x.jpg 900w,
+                                                  ./images/tablet/laptop2-tab.jpg 354w,
+                                                  ./images/tablet/laptop2-tab@2x.jpg 708w,
+                                                  ./images/laptop2.jpg 370w" alt="Working on laptop"
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px" />
               <figcaption class="portfolio-description">
                 <h3 class="portfolio-name">Growing Business</h3>
                 <p class="portfolio-typecription">Aplikacja</p>
@@ -270,6 +323,7 @@
             </li>
           </ul>
         </div>
+
         <div class="social">
           <h3 class="social__title">Dołącz do nas</h3>
           <ul class="footer-social">
@@ -306,6 +360,44 @@
       </div>
     </section>
   </footer>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html">Agencja</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link  mobile-menu__link--active-page"
+          href="./portfolio.html">Portfolio</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contact">Kontakt</a></li>
+    </ul>
+    <ul class="mobile-contact">
+      <li class="mobile-contact__tel"><a href="tel:+4811111111" class="mobile-contact__link-tel">
+          +48 111 111 111</a></li>
+      <li class="mobile-contact__mail"><a href="mailto:info@devstudio.com" class="mobile-contact__link-mail">
+          info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-social">
+      <li class="mobile-social__item"><a href="#instagram" class="mobile-social__link">Instagram <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#twitter" class="mobile-social__link">Twitter <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#facebook" class="mobile-social__link">Facebook <span
+            class="mobile-social__line">|</span></a></li>
+      <li class="mobile-social__item"><a href="#linkedin" class="mobile-social__link">Linkedin</a></li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

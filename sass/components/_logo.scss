@@ -1,56 +1,117 @@
-.logo {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    cursor: pointer;
-
-    &-main {
-            color: var(--brand-main-color);
-            text-decoration: none;
-        }
-    
-    &-secondary {
-        color: var(--brand-second-color);
-        text-decoration: none;
-    }
-    
-    &-third {
-        color: var(--text-main-color);
-        text-decoration: none;
-    }
-
-    &__link {
-        text-decoration: none;
-        color: var(--text-main-color);
-        transition: var(--transition);
-        transition-property: color, background-color, box-shadow;
-
-        &:visited {
-            color: var(--text-main-color);
-        }
-        
-        &:active,
-        &:hover,
-        &:focus {
-            color: var(--brand-main-color);
-        }
-    }
-
-    &-footer {
-        display: flex;
+@media screen and (min-width: 1200px) {
+    .logo {
         font-family: "Raleway";
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
         text-decoration: none;
-        margin-top: 0;
+        cursor: pointer;
 
-        &-link {
+        &-main {
+            color: var(--brand-main-color);
             text-decoration: none;
         }
+
+        &-secondary {
+            color: var(--brand-second-color);
+            text-decoration: none;
+        }
+
+        &-third {
+            color: var(--text-main-color);
+            text-decoration: none;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: var(--text-main-color);
+            transition: var(--transition);
+            transition-property: color, background-color, box-shadow;
+
+            &:visited {
+                color: var(--text-main-color);
+            }
+
+            &:active,
+            &:hover,
+            &:focus {
+                color: var(--brand-main-color);
+            }
+        }
+
+        &-footer {
+            display: flex;
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            margin-top: 0;
+
+            &-link {
+                text-decoration: none;
+            }
+        }
     }
+}
+
+@media screen and (min-width: 480px) and (max-width:1199px) {
+        .logo {
+                font-family: "Raleway";
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 31px;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+                cursor: pointer;
+        
+                &-main {
+                    color: var(--brand-main-color);
+                    text-decoration: none;
+                }
+        
+                &-secondary {
+                    color: var(--brand-second-color);
+                    text-decoration: none;
+                }
+        
+                &-third {
+                    color: var(--text-main-color);
+                    text-decoration: none;
+                }
+        
+                &__link {
+                    text-decoration: none;
+                    color: var(--text-main-color);
+                    transition: var(--transition);
+                    transition-property: color, background-color, box-shadow;
+        
+                    &:visited {
+                        color: var(--text-main-color);
+                    }
+        
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        color: var(--brand-main-color);
+                    }
+                }
+        
+                &-footer {
+                    display: flex;
+                    font-family: "Raleway";
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;
+                    text-decoration: none;
+                    margin-top: 0;
+        
+                    &-link {
+                        text-decoration: none;
+                    }
+                }
+            }
 }
