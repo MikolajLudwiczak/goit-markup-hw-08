@@ -1,3 +1,48 @@
+.asset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    &-item {
+        max-width: 300px;
+        margin-left: 0;
+        margin-right: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        list-style-type: none;
+        color: #757575;
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            width: 300px;
+            height: 120px;
+            background-color: #f5f4fa;
+            border-radius: 4px;
+            list-style-type: none;
+            margin-top: 30px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--text-main-color);
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .asset {
         display: inline-flex;
@@ -93,51 +138,14 @@
 
     }
 }
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .asset {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: left;
-        list-style: none;
-        padding: 0;
-        width: 100%;
-
         &-item {
             max-width: 450px;
-            margin-left: 0;
-            margin-right: 15px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.03em;
-            list-style-type: none;
-            color: #757575;
 
             &-icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 30px;
-                    width: 450px;
-                    height: 120px;
-                    background-color: #f5f4fa;
-                    border-radius: 4px;
-                    list-style-type: none;
-                    margin-top: 30px;
+                    max-width: 450px;
                 }
-            
-                &-title {
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 16px;
-                    letter-spacing: 0.03em;
-                    text-transform: uppercase;
-                    color: var(--text-main-color);
-                }
-        }
-
+        }  
     }
 }

@@ -1,5 +1,11 @@
+.header-contact {
+    display: none;
+    visibility: hidden;
+}
+
 @media screen and (min-width:1200px) {
     .header-contact {
+        visibility:visible;
         display: flex;
         justify-content: flex-start;
         font-weight: 500;
@@ -46,6 +52,7 @@
 
 @media screen and (min-width:768px) and (max-width: 1199px){
     .header-contact {
+        visibility: visible;
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -100,8 +107,5 @@
 }
 
 @media screen and (min-width:480px) and (max-width:767px){
-    .header-contact {
-        display: none;
-        visibility: hidden;
-    }
+
 }

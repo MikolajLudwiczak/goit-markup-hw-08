@@ -1,12 +1,40 @@
-@media screen and (min-width: 1200px) {
-    .page-footer {
-        background-color: #2f303a;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+.page-footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-    .footer {
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-top: 0;
+
+    &-link {
+        text-decoration: none;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
         align-items: flex-start;
         justify-content: space-between;
 
@@ -15,89 +43,14 @@
             justify-content: start;
         }
     }
-
-    .logo-footer {
-        display: flex;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        margin-top: 0;
-
-        &-link {
-                text-decoration: none;
-            }
-    }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    .page-footer {
-        background-color: #2f303a;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
     .footer {
-        display: flex;
-        align-items: flex-start;
         justify-content: space-evenly;
 
         &__container {
-            display: flex;
-            flex-wrap: wrap;
             justify-content: space-evenly;
-        }
-    }
-
-    .logo-footer {
-        display: flex;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        margin-top: 0;
-
-        &-link {
-            text-decoration: none;
-        }
+            }
     }
 }
-@media screen and (min-width: 480px) and (max-width: 767px){
-    .page-footer {
-        background-color: #2f303a;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &__container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center
-        }
-    }
-
-    .logo-footer {
-        display: flex;
-        align-items: center;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        margin-top: 0;
-
-        &-link {
-            text-decoration: none;
-            align-items: center;
-        }
-    }
-}
+@media screen and (min-width: 480px) and (max-width: 767px){}

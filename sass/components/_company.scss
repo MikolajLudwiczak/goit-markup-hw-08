@@ -1,3 +1,44 @@
+.company-box {
+    text-align: center;
+}
+
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px 15px 15px;
+
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        transition: var(--transition);
+        transition-property: fill;
+        margin-bottom: 30px;
+
+        &:hover .company-icon {
+            fill: var(--brand-main-color);
+            cursor: pointer;
+        }
+
+        &:hover {
+            border-color: var(--brand-main-color);
+            cursor: pointer;
+        }
+    }
+
+    &-icon {
+        fill: #afb1b8;
+        transition: var(--transition);
+        transition-property: fill;
+    }
+}
 @media screen and (min-width:1200px) {
     .company-box {
         text-align: center;
@@ -83,45 +124,5 @@
     }
 }
 @media screen and (min-width:480px) and (max-width: 767px) {
-.company-box {
-        text-align: center;
-    }
 
-    .company {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        list-style: none;
-        padding: 0px 15px 15px;
-
-
-        &-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 170px;
-            height: 92px;
-            border: 1px solid #afb1b8;
-            border-radius: 4px;
-            transition: var(--transition);
-            transition-property: fill;
-            margin-bottom: 30px;
-
-            &:hover .company-icon {
-                fill: var(--brand-main-color);
-                cursor: pointer;
-            }
-
-            &:hover {
-                border-color: var(--brand-main-color);
-                cursor: pointer;
-            }
-        }
-
-        &-icon {
-            fill: #afb1b8;
-            transition: var(--transition);
-            transition-property: fill;
-        }
-    }
 }

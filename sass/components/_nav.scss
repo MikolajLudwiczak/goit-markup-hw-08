@@ -1,8 +1,6 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .nav {
-        display: none;
-        overflow: hidden;
-    }
+.nav {
+    display: none;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 767px) {
@@ -49,3 +47,5 @@
         }
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {}
