@@ -191,6 +191,7 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-left: 15px;
   cursor: pointer;
 }
 .logo-main {
@@ -244,7 +245,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .nav {
     display: flex;
     list-style: none;
@@ -623,6 +624,8 @@
 
 @media screen and (min-width: 1200px) {
   .project-box {
+    display: flex;
+    visibility: visible;
     text-align: center;
     padding-top: 0;
   }
@@ -630,6 +633,7 @@
   .project {
     display: flex;
     justify-content: center;
+    padding: 0;
   }
   .project-item {
     list-style: none;
@@ -660,8 +664,6 @@
 .team-box {
   text-align: center;
   background: #f5f4fa;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .team {
@@ -800,7 +802,7 @@
   justify-content: start;
   align-items: center;
   list-style: none;
-  padding-left: 0;
+  padding-left: 15px;
 }
 .filter-button {
   margin-top: 15px;
@@ -833,77 +835,14 @@
 
 @media screen and (min-width: 1200px) {
   .filter {
-    display: flex;
+    padding-left: 0;
     justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-  .filter-button {
-    width: 114px;
-    height: 38px;
-    margin-right: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-main-color);
-    background: #f5f4fa;
-    border-radius: 4px;
-    border: 0px;
-    transition: var(--transition);
-    transition-property: color, background, box-shadow;
-  }
-  .filter-button:active, .filter-button:focus, .filter-button:hover {
-    color: var(--brand-second-color);
-    background: var(--brand-main-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: 0px;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-  }
-  .filter-button {
-    width: 114px;
-    height: 38px;
-    margin-right: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-main-color);
-    background: #f5f4fa;
-    border-radius: 4px;
-    border: 0px;
-    transition: var(--transition);
-    transition-property: color, background, box-shadow;
-  }
-  .filter-button:active, .filter-button:focus, .filter-button:hover {
-    color: var(--brand-second-color);
-    background: var(--brand-main-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: 0px;
-    cursor: pointer;
+    flex-wrap: nowrap;
   }
 }
 .invisible {
   visibility: hidden;
+  display: none;
 }
 
 .portfolio {
@@ -988,133 +927,16 @@
     padding-top: 0;
   }
   .portfolio-item {
-    position: relative;
-    z-index: 1;
     width: 370px;
-    height: 404px;
-    margin: 15px;
-    list-style-type: none;
-    background: var(--brand-second-color);
-    overflow: hidden;
-    cursor: pointer;
-    transition: var(--transition);
-    transition-property: fill;
-    border: 1px solid #EEEEEE;
-  }
-  .portfolio-item:hover, .portfolio-item:active, .portfolio-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-  }
-  .portfolio-item:hover .overlay {
-    visibility: visible;
-    transform: translateY(0);
-  }
-  .portfolio-description {
-    position: absolute;
-    z-index: 101;
-    font-size: 16px;
-    color: #757575;
-    padding-left: 25px;
-    background-color: var(--brand-second-color);
-    width: 100%;
-    height: 100%;
-  }
-  .portfolio-image {
-    margin: 0px;
-    object-fit: cover;
-  }
-  .portfolio-name {
-    position: relative;
-    z-index: 3;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.06em;
-    color: var(--text-main-color);
-  }
-  .portfolio-type {
-    position: relative;
-    z-index: 3;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-
-  .img-over {
-    position: relative;
-    overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .invisible {
-    visibility: hidden;
-  }
-
   .portfolio {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0;
-    padding-top: 0;
   }
   .portfolio-item {
-    position: relative;
-    z-index: 1;
     width: 354px;
-    height: 404px;
-    margin: 15px;
-    list-style-type: none;
-    background: var(--brand-second-color);
-    overflow: hidden;
-    cursor: pointer;
-    transition: var(--transition);
-    transition-property: fill;
-    border: 1px solid #EEEEEE;
-  }
-  .portfolio-item:hover, .portfolio-item:active, .portfolio-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-  }
-  .portfolio-item:hover .overlay {
-    visibility: visible;
-    transform: translateY(0);
-  }
-  .portfolio-description {
-    position: absolute;
-    z-index: 101;
-    font-size: 16px;
-    color: #757575;
-    padding-left: 25px;
-    background-color: var(--brand-second-color);
-    width: 100%;
-    height: 100%;
-  }
-  .portfolio-image {
-    margin: 0px;
-    object-fit: cover;
-  }
-  .portfolio-name {
-    position: relative;
-    z-index: 3;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.06em;
-    color: var(--text-main-color);
-  }
-  .portfolio-type {
-    position: relative;
-    z-index: 3;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-
-  .img-over {
-    position: relative;
-    overflow: hidden;
   }
 }
 .overlay {
@@ -1197,6 +1019,7 @@
   }
 
   .footer-contact {
+    padding-left: 15px;
     text-align: left;
   }
 }
@@ -1365,6 +1188,7 @@
     text-align: left;
     margin-top: 14px;
     margin-left: auto;
+    margin-right: 15px;
     width: 570px;
   }
   .newsletter-form-tittle {
@@ -1680,7 +1504,7 @@
   padding-left: 4px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1737,6 +1561,7 @@
   }
   .footer__container {
     flex-direction: row;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

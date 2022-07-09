@@ -4,6 +4,8 @@
 }
 @media screen and (min-width: 1200px) {
     .project-box {
+        display: flex;
+        visibility: visible;
         text-align: center;
         padding-top: 0;
     }
@@ -11,6 +13,7 @@
     .project {
         display: flex;
         justify-content: center;
+        padding: 0;
 
 
         &-item {

@@ -5,6 +5,7 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-left: 15px;
     cursor: pointer;
 
     &-main {
@@ -57,7 +58,6 @@
 
 @media screen and (min-width: 1200px) {
     .logo {
-
         font-size: 26px;
         
         &-footer {
@@ -66,4 +66,5 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width:1199px) {}
+@media screen and (min-width: 480px) and (max-width:1199px) {
+}
