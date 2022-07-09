@@ -1,8 +1,8 @@
 .social {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 60px;
-    justify-content: space-evenly;
     align-items: center;
 
     &__title {
@@ -28,6 +28,7 @@
     text-align: left;
     list-style: none;
     margin: 0;
+    margin-top: 20px;
     padding: 0;
 
 
@@ -51,24 +52,6 @@
     .social {
         margin-top: 12px;
         margin-left: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-
-        &__title {
-            text-align: left;
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            padding: 0;
-            margin: 0;
-            margin-bottom: 20px;
-            color: var(--brand-second-color);
-        }
     }
 
     .footer-social {
@@ -77,55 +60,12 @@
         flex-wrap: wrap;
         text-align: left;
         list-style: none;
-        margin: 0;
-        padding: 0;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .social {
-        margin-top: 12px;
-        margin-left: 70px;
-
-        &__title {
-            text-align: center;
-            font-family: "Roboto";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            padding: 0;
-            margin: 0;
-            margin-bottom: 20px;
-            color: var(--brand-second-color);
-        }
-    }
-
-    .footer-social {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        text-align: left;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-
-        &-icon {
-            padding-right: 10px;
-            fill: var(--brand-second-color);
-            --color3: rgba(255, 255, 255, 0.1);
-            transition: var(--transition);
-            transition-property: var(--color3);
-
-            &:active,
-            &:hover,
-            &:focus {
-                --color3: var(--brand-main-color);
-                cursor: pointer;
-            }
-        }
+        margin-top: 0;
     }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
