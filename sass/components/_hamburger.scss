@@ -27,8 +27,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 48px 40px 48px 40px;
     background-color: var(--brand-second-color);
     z-index: 999;
@@ -72,16 +72,17 @@
 }
 
 .mobile-contact {
+    padding: 0;
     text-align: left;
     list-style: none;
     text-decoration: none;
 
     &__tel {
         font-weight: 500;
-        font-size: 34px;
+        font-size: 30px;
         line-height: 40px;
         letter-spacing: 0.02em;
-        padding-top: 270px;
+        padding-top: 150px;
         padding-bottom: 32px;
     }
 
@@ -105,7 +106,9 @@
 }
 
 .mobile-social {
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     list-style: none;
@@ -125,6 +128,29 @@
     &__line {
         color: rgba(33, 33, 33, 0.2);
         padding-left: 4px;
+    }
+}
+@media screen and (min-width:480px) and (max-width: 768px) {
+    .menu-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .menu-container .menu-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: var(--text-main-color);
+    }
+
+    .mobile-contact {
+        &__tel {
+            font-size: 34px;
+        }
+    }
+
+    .mobile-social {
+        flex-wrap: nowrap;
     }
 }
 
