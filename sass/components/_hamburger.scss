@@ -4,6 +4,7 @@
     min-height: 40px;
     min-width: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: transparent;
     cursor: pointer;
@@ -24,6 +25,8 @@
 
 .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,6 +55,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
 
     &__link {
         display: block;
@@ -71,6 +76,7 @@
 }
 
 .mobile-contact {
+    margin-top: auto;
     padding: 0;
     text-align: left;
     list-style: none;
@@ -81,7 +87,6 @@
         font-size: 30px;
         line-height: 40px;
         letter-spacing: 0.02em;
-        padding-top: 150px;
         padding-bottom: 32px;
     }
 
@@ -129,6 +134,7 @@
         padding-left: 4px;
     }
 }
+
 @media screen and (min-width:480px) and (max-width: 768px) {
     .menu-container {
         width: 100vw;
@@ -144,7 +150,6 @@
 
     .mobile-contact {
         &__tel {
-            padding-top: 250px;
             font-size: 34px;
         }
     }

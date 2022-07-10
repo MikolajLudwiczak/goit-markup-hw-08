@@ -4,7 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    min-height: 581px;
+    min-height: 600px;
     background-color: var(--brand-second-color);
     transition: var(--transition);
     transition-property: transform;
@@ -73,16 +73,20 @@
 @media screen and (min-width: 768px) {
     .modal {
         width: 528px;
+        min-height: 581px;
     }
 
     .submit {
-        margin-left: 124px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width:768px) {
     .modal {
         width: 450px;
+        min-height: 581px;
     }
 
     .submit {
