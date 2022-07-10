@@ -1414,7 +1414,6 @@
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -1541,6 +1540,7 @@
   }
 
   .mobile-contact__tel {
+    padding-top: 250px;
     font-size: 34px;
   }
 
